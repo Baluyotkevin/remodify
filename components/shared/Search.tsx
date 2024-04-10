@@ -11,7 +11,7 @@ export const Search = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
-
+  console.log(query)
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (query) {

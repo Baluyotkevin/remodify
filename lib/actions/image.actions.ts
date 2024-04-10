@@ -108,12 +108,12 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       secure: true,
     })
 
-    let expression = 'folder=imaginify';
+    let expression = 'folder=remodify';
 
     if (searchQuery) {
       expression += ` AND ${searchQuery}`
     }
-
+    
     const { resources } = await cloudinary.search
       .expression(expression)
       .execute();
