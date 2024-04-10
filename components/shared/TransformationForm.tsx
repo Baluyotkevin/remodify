@@ -32,7 +32,7 @@ import TransformedImage from "./TransformedImage"
 import { updateCredits } from "@/lib/actions/user.actions"
 import { getCldImageUrl } from "next-cloudinary"
 import { useRouter } from "next/navigation"
-import { updateImage, addImage } from "@/lib/actions/image.action"
+import { updateImage, addImage } from "@/lib/actions/image.actions"
 import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
  
 export const formSchema = z.object({
